@@ -1,0 +1,64 @@
+﻿<Window x:Class="CosmetShop.Win.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CosmetShop.Win"
+        mc:Ignorable="d"
+        Title="AddWindow" MinHeight="600" MinWidth="447" Height="600" Width="447">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="125*"/>
+            <ColumnDefinition Width="322*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="#B3F4E9" Grid.ColumnSpan="2">
+            <Image Source="/Res/logo.png" HorizontalAlignment="Left">
+
+            </Image>
+            <Label x:Name="lbl" FontFamily="Candara" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" >Добавление</Label>
+        </Grid>
+
+
+
+
+        <DatePicker Grid.Column="1" Grid.Row="1" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"   VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="DateOTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="1"  Height="25" IsHitTestVisible="False" Text="Дата заказа" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <DatePicker Grid.Column="1" Grid.Row="2" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"   VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="DDTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="2"  Height="25" IsHitTestVisible="False" Text="Дата доставки" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <TextBox Grid.Column="1" Grid.Row="3" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"  TextAlignment="Center" VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="POITB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="3"  Height="25" IsHitTestVisible="False" Text="Код пункта выдачи" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <TextBox Grid.Column="1" Grid.Row="4" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"  TextAlignment="Center"  VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="NameTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="4"  Height="25" IsHitTestVisible="False" Text="Имя" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <TextBox Grid.Column="1" Grid.Row="5" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"   VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="SecondNameTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="5"  Height="25" IsHitTestVisible="False" Text="Фамилия" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <Label Grid.Column="0" Grid.Row="6"  x:Name="EmpLabel" Width="68" Height="25" HorizontalAlignment="Center" >Отчество</Label>
+        <TextBox Grid.Column="1" Grid.Row="6" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"  TextAlignment="Center"  VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="PatronymicTB" Grid.ColumnSpan="2" />
+
+        <TextBox Grid.Column="1" Grid.Row="7" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"  TextAlignment="Center"  VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="RCTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="7"  Height="25" IsHitTestVisible="False" Text="Код получения" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <TextBox Grid.Column="1" Grid.Row="8" BorderBrush="Gray" BorderThickness="0.6" Foreground="Black" VerticalContentAlignment="Center"  TextAlignment="Center"  VerticalAlignment="Top" Margin="30,6,30,0" Height="40" x:Name="StatusTB" Grid.ColumnSpan="2" />
+        <TextBlock Grid.Column="0" Grid.Row="8"  Height="25" IsHitTestVisible="False" Text="Статус" TextAlignment="Center" VerticalAlignment="Center" Foreground="Black" HorizontalAlignment="Center"></TextBlock>
+
+        <Border Grid.Row="9" MouseDown="AddBTN_MouseDown" Background="#A5E887" x:Name="AddBTN" Padding="5" BorderThickness="1" CornerRadius="10" Height="50" Grid.ColumnSpan="2" >
+            <TextBlock FontSize="16" x:Name="LabelOfBorder" Foreground="AliceBlue" Text="Добавить" TextAlignment="Center" VerticalAlignment="Center" />
+        </Border>
+    </Grid>
+</Window>
