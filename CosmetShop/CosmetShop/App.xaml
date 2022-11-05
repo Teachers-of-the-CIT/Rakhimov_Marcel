@@ -1,0 +1,33 @@
+﻿<Application x:Class="CosmetShop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CosmetShop"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#B3F4E9">
+            </Setter>
+            <Setter Property="FontFamily" Value="Candara"></Setter>
+            
+        </Style>
+    
+    
+    
+        <Style TargetType="Label">
+       
+            <Setter Property="FontFamily" Value="Candara"></Setter>
+
+        </Style>
+        <Style TargetType="TextBox">
+
+            <Setter Property="FontFamily" Value="Candara"></Setter>
+
+        </Style>
+        <Style TargetType="PasswordBox">
+
+            <Setter Property="FontFamily" Value="Candara"></Setter>
+
+        </Style>
+        
+    </Application.Resources>
+</Application>
